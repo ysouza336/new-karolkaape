@@ -1,0 +1,356 @@
+.project-hero {
+
+    position: relative;
+
+    height: 65vh;
+
+    overflow: hidden;
+
+}
+
+.project-hero img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+.project-hero .overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, .45);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #fff;
+
+}
+
+.masonry-gallery {
+
+    columns: 4;
+
+    column-gap: 16px;
+
+}
+
+.masonry-gallery a {
+
+    display: block;
+
+    margin-bottom: 16px;
+
+}
+
+.masonry-gallery img {
+
+    width: 100%;
+
+    border-radius: 12px;
+
+    transition: .4s ease;
+
+}
+
+.masonry-gallery img:hover {
+
+    transform: scale(1.03);
+
+}
+
+.mosaic-showcase {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.mosaic-showcase img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: .4s ease;
+}
+
+.mosaic-showcase a:hover img{
+    transform: scale(1.05);
+}
+
+/* ===============parte de PROJETO========================== */
+.section-project {
+    padding: 80px 0;
+}
+
+.section-project .container {
+    max-width: 1320px;
+}
+
+/* ========================================================================= */
+.hero-home {
+
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.hero-home #heroCarousel,
+.hero-home .carousel-inner,
+.hero-home .carousel-item {
+
+    height: 100vh;
+
+}
+
+.hero-home .carousel-item img {
+
+    width: 100%;
+
+    height: 100vh;
+
+    object-fit: cover;
+
+}
+
+.hero-home .overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, .45);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    z-index: 2;
+
+    pointer-events: none;
+
+}
+
+.hero-home .overlay .btn {
+
+    pointer-events: auto;
+
+}
+
+.hero-home .carousel-control-prev,
+.hero-home .carousel-control-next,
+.hero-home .carousel-indicators {
+
+    z-index: 3;
+
+}
+
+/* Cards da Home */
+
+.home-card {
+
+    height: 100%;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+}
+
+.home-card img {
+
+    width: 100%;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    transition: .4s ease;
+
+}
+
+.home-card:hover img {
+
+    transform: scale(1.05);
+
+}
+
+.home-card .card-body {
+
+    min-height: 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.home-card h5 {
+
+    margin: 0;
+
+    text-align: center;
+
+}
+
+/* =============Outros Ambientes========================== */
+.projeto-card {
+    border-radius: 18px;
+    overflow: hidden;
+    transition: .35s ease;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.projeto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .15) !important;
+}
+
+.projeto-card .card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.projeto-card:hover .card-img-top {
+    transform: scale(1.08);
+}
+
+.projeto-card .card-body {
+    padding: 24px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: #fff;
+}
+
+.projeto-card h5 {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #fff;
+    font-weight: 600;
+}
+
+.projeto-card::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 45%;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, .75),
+            rgba(0, 0, 0, 0));
+}
+
+/* =================CARDS-PROJETOS================================= */
+.gallery-grid {
+    row-gap: 2rem;
+}
+
+.project-card {
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    transition: .35s ease;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .12);
+}
+
+/* Padronizar imagens */
+
+.project-image {
+    overflow: hidden;
+    height: 320px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .6s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.08);
+}
+
+/* Corpo Card */
+.project-card .card-body {
+    padding: 28px;
+}
+
+.project-card h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 14px;
+    color: #202020;
+}
+
+.project-card p {
+    color: #6d6d6d;
+    line-height: 1.7;
+    margin-bottom: 0;
+
+    display: -webkit-box;
+    /* -webkit-line-clamp:3; */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media(max-width:992px) {
+
+    .masonry-gallery {
+        columns: 3;
+    }
+
+    .mosaic-showcase {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .masonry-gallery {
+        columns: 2;
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .masonry-gallery {
+        columns: 1;
+    }
+
+    .mosaic-showcase {
+        grid-template-columns: 1fr;
+    }
+
+}
